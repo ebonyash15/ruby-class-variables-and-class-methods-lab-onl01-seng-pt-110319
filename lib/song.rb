@@ -15,7 +15,13 @@ def self.artists
     unique_artists
 end
 def self.genres
-  @@genres
+  unique_genres = []
+  @@genres.each do |genre|
+    if !unique_genres.include?(genre)
+      unique_genres<<genre
+    end
+  end
+  unique_genres
 end
 def initialize(name,artist,genre)
   @@count+=1
