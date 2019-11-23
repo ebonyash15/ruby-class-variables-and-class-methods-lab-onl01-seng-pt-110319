@@ -43,13 +43,11 @@ end
 def self.genre_count
   genre_counts = {}
   @@genres.each do |genre|
-    if genre_counts.include?(genre)
-      genre_counts[genre]+=1
-    end
+      genre_counts[genre]=genre_counts[genre]+1
   end
   genre_counts
 end
-def artist_count
+def self.artist_count
 {}
 end
 end
