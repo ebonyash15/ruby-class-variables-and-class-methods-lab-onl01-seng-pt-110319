@@ -40,7 +40,7 @@ end
 def genre
   @genre
 end
-def genre_count
+def self.genre_count
   genre_counts = {}
   @@genres.each do |genre|
     if genre_counts.include?(genre)
