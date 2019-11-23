@@ -11,6 +11,7 @@ def self.artists
     if !unique_artists.include?(artist)
       unique_artists << artist
     end
+  end
     unique_artists
 end
 def self.genres
