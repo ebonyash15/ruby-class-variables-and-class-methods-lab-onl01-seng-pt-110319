@@ -8,6 +8,9 @@ end
 def self.artists
   @@artists
 end
+def self.genres
+  @@genres
+end
 def initialize(name,artist,genre)
   @@count+=1
   @@artists << artist
